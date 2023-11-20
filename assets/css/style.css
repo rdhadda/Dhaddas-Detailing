@@ -56,6 +56,34 @@ body {
   left: 10px;
 }
 
+/* ---------------------------------------------------------------------------Who Are We? */
+
+#who-are-we {
+  text-align: center;
+  font-family: "roboto";
+  margin-top: 25px;
+}
+
+#who-are-we h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#who-are-we p {
+  margin-top: 15px;
+}
+
+hr {
+  border: none;
+}
+
+.jumbotron {
+  margin-top: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(220, 95, 0, 0.5);
+}
+
 /* ---------------------------------------------------------------------------Footer */
 
 footer {
