@@ -12,6 +12,7 @@ body {
   font-family: "roboto";
   text-transform: uppercase;
   margin-right: 20px;
+  letter-spacing: 2px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -20,6 +21,39 @@ body {
 
 .navbar .navbar-toggler {
   border: 0;
+}
+
+/* ---------------------------------------------------------------------------Hero-Section */
+
+#hero-section {
+  position: relative;
+}
+
+#hero-image {
+  background-image: url("../img/andre-tan-pRppMPh4Zho-unsplash.jpg");
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero-text {
+  width: 500px;
+  height: 150px;
+  background-color: rgba(241, 109, 107, 0.7);
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+#hero-text h3 {
+  color: #fafafa;
+  font-size: 200%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
 }
 
 /* ---------------------------------------------------------------------------Footer */
@@ -32,6 +66,8 @@ footer {
 
 footer p {
   padding-top: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .social-links li a i {
@@ -40,4 +76,17 @@ footer p {
   padding: 12px 0;
   font-size: 25px;
   color: #fafafa;
+}
+
+/* ---------------------------------------------------------------------------Media Queries */
+
+@media screen and (max-width: 943px) {
+  #hero-text {
+    width: 200px;
+    height: 160px;
+  }
+
+  #hero-text h3 {
+    font-size: 150%;
+  }
 }
