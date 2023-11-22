@@ -64,7 +64,7 @@ body {
   margin-top: 25px;
 }
 
-#who-are-we h1 {
+#who-are-we h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -77,16 +77,15 @@ hr {
   border: none;
 }
 
-.jumbotron {
-  margin-top: 25px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgba(220, 95, 0, 0.5);
-}
-
 .grid-image {
   height: 400px;
   width: 400px;
+}
+
+/* ---------------------------------------------------------------------------Three Images */
+
+.images-container {
+  margin-top: 2rem;
 }
 
 /* ---------------------------------------------------------------------------Where to Find Us */
@@ -100,9 +99,8 @@ hr {
 }
 
 .container-wrapper {
-  background-color: rgba(241, 109, 107, 0.7);
+  background-color: rgba(241, 109, 107, 1);
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .find-us-header {
@@ -120,7 +118,6 @@ hr {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: 15px;
 }
 
 /* ---------------------------------------------------------------------------Footer */
