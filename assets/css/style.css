@@ -23,6 +23,10 @@ body {
   border: 0;
 }
 
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
 /* ---------------------------------------------------------------------------Hero-Section */
 
 #hero-section {
