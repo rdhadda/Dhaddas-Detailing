@@ -88,6 +88,15 @@ hr {
   margin-top: 2rem;
 }
 
+/* ---------------------------------------------------------------------------What Our Customers Said */
+.testimonials-container {
+  margin-top: 2.5rem;
+}
+
+.blockquote-footer {
+  background-color: white;
+}
+
 /* ---------------------------------------------------------------------------Where to Find Us */
 .bg-color-find-us {
   background-color: rgba(241, 109, 107, 0.7);
