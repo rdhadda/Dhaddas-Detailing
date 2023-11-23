@@ -155,6 +155,20 @@ footer p {
   color: #fafafa;
 }
 
+/* ---------------------------------------------------------------------------Booking Modal */
+
+.modal-header {
+  background-color: rgba(241, 109, 107, 1);
+}
+
+.modal-header h5 {
+  color: #fafafa;
+}
+
+.text-area {
+  margin-top: 10px;
+}
+
 /* ---------------------------------------------------------------------------Media Queries */
 
 @media screen and (max-width: 943px) {

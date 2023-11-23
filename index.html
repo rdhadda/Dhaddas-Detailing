@@ -21,7 +21,6 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a href="#" class="navbar-brand">
         <img
@@ -29,7 +28,6 @@
           alt="Dhadda's Detailing Logo"
         />
       </a>
-
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +39,6 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto align-items-center">
           <li class="nav-item"><a href="#" class="nav-link">Packages</a></li>
@@ -69,19 +66,16 @@
     </section>
 
     <!-- Who Are We? -->
-
     <section class="container">
       <div id="who-are-we">
         <h2>Who Are We?</h2>
         <p>Welcome to Dhadda's Detailing, where passion meets precision!</p>
-
         <p>
           Established in 2023, we are your premier destination for top-tier car
           detailing services. Our team of dedicated professionals is committed
           to bringing out the true beauty of your vehicle, ensuring it looks and
           feels its absolute best.
         </p>
-
         <p>
           With a relentless attention to detail and a dedication to the art of
           automotive perfection, we are here to transform your car into a true
@@ -90,7 +84,6 @@
           Dhadda's Detailing to exceed your expectations and have your car
           turning heads wherever it goes.
         </p>
-
         <p>
           Discover the difference today and experience automotive excellence
           like never before.
@@ -99,7 +92,6 @@
     </section>
 
     <!-- Three Images -->
-
     <section>
       <div class="container images-container">
         <div class="row">
@@ -180,7 +172,6 @@
     </section>
 
     <!-- Where To Find Us -->
-
     <div class="container-wrapper">
       <div class="container">
         <section>
@@ -189,7 +180,6 @@
               <h2 class="text-uppercase find-us-header">Where to find us</h2>
             </div>
           </div>
-
           <div class="row text-center contact">
             <div class="col-12 col-md-6 contact-text">
               <p>Dhadda's Detailing, Unit 1, Dhadda Way, United Kingdom</p>
@@ -212,8 +202,6 @@
         </section>
       </div>
     </div>
-
-    <!-- Contact Form -->
 
     <!-- Footer -->
     <footer class="container-fluid">
@@ -257,19 +245,18 @@
     </footer>
 
     <!-- Book Now Modal -->
-
     <div
       class="modal fade"
       id="bookNowModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="bookNowModalTitle"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
+            <h5 class="modal-title" id="bookNowModalTitle">
               Dhadda's Detailing Booking Form
             </h5>
             <button
@@ -284,63 +271,63 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="name">Full Name</label>
+                <label for="name">Full Name*</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
                   placeholder="Joe Bloggs"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
+                <label for="email">Email address*</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="email"
                   placeholder="name@example.com"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="telephone">Telephone Number</label>
+                <label for="telephone">Telephone Number*</label>
                 <input
                   type="text"
                   class="form-control"
                   id="telephone"
                   placeholder="07986257874"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1"
-                  >Select Your Package</label
-                >
-                <select class="form-control" id="exampleFormControlSelect1">
+                <label for="packageSelect">Select Your Package*</label>
+                <select class="form-control" id="packageSelect" required>
                   <option>Package 1</option>
                   <option>Package 2</option>
                   <option>Package 3</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="meeting-time"
-                  >Choose a date and time for your appointment:</label
+                <label for="booking-time"
+                  >Choose a date and time for your appointment*</label
                 >
 
                 <input
                   type="datetime-local"
-                  id="meeting-time"
-                  name="meeting-time"
+                  id="booking-time"
+                  name="booking-time"
                   value="2023-11-22T09:00"
                   min="2023-11-22T09:00"
                   max="2024-11-22T17:00"
+                  required
                 />
               </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1"
-                  >Any additional information:</label
-                >
+              <div class="form-group text-area">
+                <label for="textArea">Any additional information</label>
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="textArea"
                   rows="3"
                 ></textarea>
               </div>
@@ -354,7 +341,52 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Book</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              data-toggle="modal"
+              data-target="#thankYouModal"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank For Booking Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="thankYouModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">
+              Thank you for choosing Dhadda's Detailing!
+            </p>
+            <p>
+              We're thrilled to have the opportunity to enhance the beauty of
+              your vehicle. Get ready for an exceptional detailing experience!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>

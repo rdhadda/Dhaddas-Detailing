@@ -207,6 +207,10 @@ To clone the Dhadda's-Detailing repository:
 
 5. The middle image in the three images underneath the who are we section, was taller than the images beside it. I wanted them to all be the same height and width. At first i set a fixed height to the column and set the overflow to none. This looked great on the desktop but as the screen size decreased the same problem occurred. I felt that this wasn't a good viewing experience. In the end i ended up re-sizing the images using BIRME. The issue was resolved.
 
+### Known Bugs
+
+1. The required fields on my book now modal do not work. This is because i'm using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute doesn't take the required attribute into account. This should hopefully be resolved using Javascript.
+
 ### Testing User Stories
 
 ### Lighthouse
