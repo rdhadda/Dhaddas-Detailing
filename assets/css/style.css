@@ -34,7 +34,7 @@ body {
 }
 
 #hero-image {
-  background-image: url("../img/andre-tan-pRppMPh4Zho-unsplash.jpg");
+  background-image: url("../img/andre-tan-pRppMPh4Zho-unsplash.webp");
   height: 65vh;
   background-size: cover;
   background-position: center;
@@ -58,6 +58,44 @@ body {
   position: absolute;
   bottom: 30px;
   left: 10px;
+}
+
+#hero-packages-section {
+  position: relative;
+}
+
+#hero-packages-section #hero-packages-image #hero-packages-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-packages-image {
+  background-image: url("../img/mustang.webp");
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-packages-text {
+  width: 500px;
+  height: 150px;
+  background-color: rgba(241, 109, 107, 0.7);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-packages-text h3 {
+  color: #fafafa;
+  font-size: 200%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* ---------------------------------------------------------------------------Who Are We? */
@@ -118,7 +156,7 @@ hr {
 
 .find-us-header {
   margin-top: 25px;
-  color: #fafafa;
+  color: #0f0f0f;
 }
 
 .contact {
@@ -127,7 +165,7 @@ hr {
 }
 
 .contact p {
-  color: #fafafa;
+  color: #0f0f0f;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -162,7 +200,7 @@ footer p {
 }
 
 .modal-header h5 {
-  color: #fafafa;
+  color: #0f0f0f;
 }
 
 .text-area {
@@ -180,4 +218,20 @@ footer p {
   #hero-text h3 {
     font-size: 150%;
   }
+
+  #hero-packages-text {
+    width: 200px;
+    height: 160px;
+  }
+
+  #hero-packages-text h3 {
+    color: #fafafa;
+    font-size: 150%;
+  }
+}
+
+.blurb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

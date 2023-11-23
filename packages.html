@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="car detailing website" />
+    <meta
+      name="keywords"
+      content="car, cleaning, detailing, ceramic, polishing, washing"
+    />
+    <meta name="author" content="Dhadda's Detailing" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Outfit:wght@500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Dhadda's Detailing</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="index.html" class="navbar-brand">
+        <img
+          src="assets/img/White logo - no background.png"
+          alt="Dhadda's Detailing Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a href="packages.html" class="nav-link">Packages</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+          <li class="nav-item ml-1">
+            <a
+              href="#"
+              class="btn btn-outline-light"
+              data-toggle="modal"
+              data-target="#bookNowModal"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-packages-section">
+      <div id="hero-packages-image">
+        <div id="hero-packages-text">
+          <h3>Packages</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-4 border text-center">
+          <h2>Essential Clean</h2>
+          <ul>
+            <li>Exterior Hand Wash</li>
+            <li>Wheel and Tire Cleaning</li>
+            <li>Interior Vacuuming</li>
+            <li>Window Cleaning</li>
+            <li>Dashboard and Console Wipe Down</li>
+            <li>Fragrance Refresh</li>
+            <li>Basic Wax Application</li>
+          </ul>
+          <p>£50</p>
+        </div>
+        <div class="col-4 border text-center">
+          <h2>Premium Shine</h2>
+          <ul>
+            <li>Everything in the Essential Clean package</li>
+            <li>Deep Interior Cleaning and Leather/Vinyl Conditioning</li>
+            <li>Clay Bar Treatment to Remove Surface Contaminants</li>
+            <li>Paint Sealant Application for Extra Protection</li>
+            <li>Engine Bay Cleaning</li>
+            <li>Full Wheel and Tire Detailing</li>
+          </ul>
+          <p>£150</p>
+        </div>
+        <div class="col-4 border text-center">
+          <h2>Ultimate Perfection</h2>
+          <ul>
+            <li>Everything in the Premium Shine package</li>
+            <li>Paint Correction to Remove Swirl Marks and Fine Scratches</li>
+            <li>High-Quality Ceramic Coating for Long-Lasting Protection</li>
+            <li>Fabric and Upholstery Stain Removal and Protection</li>
+            <li>Headlight Restoration</li>
+            <li>Interior Odor Elimination</li>
+            <li>Exterior Trim and Plastics Restoration</li>
+          </ul>
+          <p>£250</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p>
+            Each package is designed to cater to various needs and budgets,
+            ensuring your car receives the level of care and attention it
+            deserves.
+          </p>
+          <p>
+            Dhadda's Detailing is committed to enhancing the appearance and
+            longevity of your vehicle, regardless of which package you choose.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="row text-center align-center p-3">
+        <div class="col-sm-6">
+          <p>Dhadda's Detailing, Unit 1, Dhadda Way, United Kingdom</p>
+        </div>
+
+        <div class="col-sm-6">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item mr-4">
+              <a href="#" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+
+            <li class="list-inline-item mr-4">
+              <a href="#" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+
+            <li class="list-inline-item mr-4">
+              <a href="#" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+
+            <li class="list-inline-item mr-4">
+              <a href="#" target="_blank">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Book Now Modal -->
+    <div
+      class="modal fade"
+      id="bookNowModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="bookNowModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookNowModalTitle">
+              Dhadda's Detailing Booking Form
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Full Name*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Joe Bloggs"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone Number*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telephone"
+                  placeholder="07986257874"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="packageSelect">Select Your Package*</label>
+                <select class="form-control" id="packageSelect" required>
+                  <option>Package 1</option>
+                  <option>Package 2</option>
+                  <option>Package 3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="booking-time"
+                  >Choose a date and time for your appointment*</label
+                >
+
+                <input
+                  type="datetime-local"
+                  id="booking-time"
+                  name="booking-time"
+                  value="2023-11-22T09:00"
+                  min="2023-11-22T09:00"
+                  max="2024-11-22T17:00"
+                  required
+                />
+              </div>
+              <div class="form-group text-area">
+                <label for="textArea">Any additional information</label>
+                <textarea
+                  class="form-control"
+                  id="textArea"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              data-toggle="modal"
+              data-target="#thankYouModal"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank For Booking Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="thankYouModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">
+              Thank you for choosing Dhadda's Detailing!
+            </p>
+            <p>
+              We're thrilled to have the opportunity to enhance the beauty of
+              your vehicle. Get ready for an exceptional detailing experience!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
