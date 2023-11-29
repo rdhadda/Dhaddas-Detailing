@@ -100,9 +100,9 @@ Wireframes were created for mobile, tablet and desktop.
 
 [Home Page Wireframe]
 
-[Books Wireframe]
+[Packages Wireframe]
 
-[Contact Us Wireframe]
+[Book Now Wireframe]
 
 ### Features
 

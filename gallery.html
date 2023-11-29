@@ -30,10 +30,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a href="index.html" class="navbar-brand">
-        <img
-          src="assets/img/White logo - no background.png"
-          alt="Dhadda's Detailing Logo"
-        />
+        <img src="assets/img/White-logo.png" alt="Dhadda's Detailing Logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -68,19 +65,19 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero-gallery-section">
+    <section class="hero-pg-section">
       <div id="hero-gallery-image">
-        <div id="hero-gallery-text">
+        <div class="hero-pg-text">
           <h3>Gallery</h3>
         </div>
       </div>
     </section>
 
     <!-- Gallery-->
-    <section class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col text-center">
-          <p class="packages-text">
+          <p class="pg-text">
             Welcome to Dhadda's Detailing Gallery, where automotive excellence
             meets meticulous craftsmanship. Discover a curated collection
             showcasing our signature detailing services, transforming vehicles
@@ -93,7 +90,7 @@
           <img
             class="img-fluid w-100"
             src="assets/img/brandon-atchison-nUDKaYB9hp4-unsplash.webp"
-            alt=""
+            alt="image of the rear of a ferari"
           />
         </div>
         <div class="col-md-5">
@@ -102,14 +99,14 @@
               <img
                 class="img-fluid"
                 src="assets/img/severin-demchuk-RYkZRwbmc1U-unsplash.webp"
-                alt=""
+                alt="Tesla model 3 in soap suds"
               />
             </div>
             <div class="col-md-5 col-5 sml-image">
               <img
                 class="img-fluid"
                 src="assets/img/deniz-demirci-4mUNFO4Kjyk-unsplash.webp"
-                alt=""
+                alt="Porsche alloy being cleaned"
               />
             </div>
           </div>
@@ -118,14 +115,14 @@
               <img
                 class="img-fluid"
                 src="assets/img/yuriy-bogdanov-dnRfgaxfHj0-unsplash.webp"
-                alt=""
+                alt="The front of a Lamborghini"
               />
             </div>
             <div class="col-md-5 col-5 sml-image">
               <img
                 class="img-fluid"
                 src="assets/img/robin-le-mee-teabf6RVMAM-unsplash.webp"
-                alt=""
+                alt="Ford Mustang in soap suds"
               />
             </div>
           </div>
@@ -135,13 +132,17 @@
         <div class="col-md-6">
           <div class="row mt-4 justify-content-around">
             <div class="col-md-5 col-5 sml-image">
-              <img class="img-fluid" src="assets/img/mustang.webp" alt="" />
+              <img
+                class="img-fluid"
+                src="assets/img/mustang.webp"
+                alt="Front lights of a Ford Mustang"
+              />
             </div>
             <div class="col-md-5 col-5 sml-image">
               <img
                 class="img-fluid"
                 src="assets/img/eugene-chystiakov-rbXzG9aAxVA-unsplash.webp"
-                alt=""
+                alt="Car in soap suds"
               />
             </div>
           </div>
@@ -150,14 +151,14 @@
               <img
                 class="img-fluid"
                 src="assets/img/jan-vlacuha-U4IaoKF5aj4-unsplash.webp"
-                alt=""
+                alt="Inside of a Mercedes-Benz"
               />
             </div>
             <div class="col-md-5 col-5 sml-image">
               <img
                 class="img-fluid"
                 src="assets/img/daniel-kefeli--uCp1YSCC-M-unsplash.webp"
-                alt=""
+                alt="Land Rover in soap suds"
               />
             </div>
           </div>
@@ -166,11 +167,11 @@
           <img
             class="img-fluid w-100"
             src="assets/img/jeff-tumale-AWjAGG-u_eE-unsplash.webp"
-            alt=""
+            alt="The front of a Mclaren"
           />
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="container-fluid">
@@ -271,7 +272,12 @@
               </div>
               <div class="form-group">
                 <label for="packageSelect">Select Your Package*</label>
-                <select class="form-control" id="packageSelect" required>
+                <select
+                  class="form-control"
+                  id="packageSelect"
+                  size="3"
+                  required
+                >
                   <option>Essential Clean</option>
                   <option>Premium Shine</option>
                   <option>Ultimate Perfection</option>
@@ -286,7 +292,6 @@
                   type="datetime-local"
                   id="booking-time"
                   name="booking-time"
-                  value="2023-11-22T09:00"
                   min="2023-11-22T09:00"
                   max="2024-11-22T17:00"
                   required

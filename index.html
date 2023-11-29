@@ -9,31 +9,30 @@
       content="car, cleaning, detailing, ceramic, polishing, washing"
     />
     <meta name="author" content="Dhadda's Detailing" />
-
+    <!-- Bootstrap CDN Link -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
+    <!-- Font-awsome Link -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css"
     />
+    <!-- Google Fonts Link -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Outfit:wght@500&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Dhadda's Detailing</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar - Bootstrap code used and modified -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a href="index.html" class="navbar-brand">
-        <img
-          src="assets/img/White logo - no background.png"
-          alt="Dhadda's Detailing Logo"
-        />
+        <img src="assets/img/White-logo.png" alt="Dhadda's Detailing Logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -51,7 +50,9 @@
           <li class="nav-item">
             <a href="packages.html" class="nav-link">Packages</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link">Gallery</a>
+          </li>
           <li class="nav-item ml-1">
             <a
               href="#"
@@ -68,7 +69,7 @@
     <!-- Hero Section -->
     <section id="hero-section">
       <div id="hero-image">
-        <div id="hero-text">
+        <div id="hero-text-background">
           <h3>Experience The Art Of Car Detailing</h3>
         </div>
       </div>
@@ -101,36 +102,35 @@
     </section>
 
     <!-- Three Images -->
-    <section>
-      <div class="container images-container">
-        <div class="row">
-          <div class="col d-none d-sm-block">
-            <img
-              class="img-fluid"
-              src="assets/img/neelabh-raj-rS9PBJBY5pc-unsplash (1).jpg"
-              alt="picture of a car being polished"
-            />
-          </div>
-          <div class="col">
-            <img
-              class="img-fluid"
-              src="assets/img/sanmeet-chahil-dveDkZQJVjQ-unsplash.jpg"
-              alt="picture of a bmw m4cs"
-            />
-          </div>
-          <div class="col d-none d-sm-block">
-            <img
-              class="img-fluid"
-              src="assets/img/neelabh-raj-cw1914zDHUs-unsplash.jpg"
-              alt="picture of a car being polished"
-            />
-          </div>
+
+    <div class="container" id="images-container">
+      <div class="row">
+        <div class="col d-none d-sm-block">
+          <img
+            class="img-fluid"
+            src="assets/img/neelabh-raj-rS9PBJBY5pc-unsplash.jpg"
+            alt="picture of a car being polished"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="img-fluid"
+            src="assets/img/sanmeet-chahil-dveDkZQJVjQ-unsplash.jpg"
+            alt="picture of a bmw m4cs"
+          />
+        </div>
+        <div class="col d-none d-sm-block">
+          <img
+            class="img-fluid"
+            src="assets/img/neelabh-raj-cw1914zDHUs-unsplash.jpg"
+            alt="picture of a car being polished"
+          />
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Testimonials -->
-    <section class="container testimonials-container">
+    <!-- What Our Customer's Said -->
+    <section class="container" id="testimonials-container">
       <div class="row">
         <div class="col text-center">
           <h2 class="text-uppercase">What our customers say</h2>
@@ -140,8 +140,13 @@
         <div class="col-12 col-md-6">
           <div class="media">
             <div class="d-none d-sm-block">
-              <img src="assets/img/girl-image.jpg" alt="" class="rounded-circle
-              mr-3" height=100 width=100">
+              <img
+                src="assets/img/girl-image.webp"
+                alt=""
+                class="rounded-circle mr-3"
+                height="100"
+                width="100"
+              />
             </div>
             <div class="media-body">
               <blockquote class="blockquote">
@@ -160,8 +165,13 @@
         <div class="col-12 col-md-6 d-none d-sm-block">
           <div class="media">
             <div>
-              <img src="assets/img/guy-image.jpg" alt="" class="rounded-circle
-              mr-3" height=100 width=100">
+              <img
+                src="assets/img/guy-image.webp"
+                alt=""
+                class="rounded-circle mr-3"
+                height="100"
+                width="100"
+              />
             </div>
             <div class="media-body">
               <blockquote class="blockquote">
@@ -181,7 +191,7 @@
     </section>
 
     <!-- Where To Find Us -->
-    <div class="container-wrapper">
+    <div id="container-wrapper">
       <div class="container">
         <section>
           <div class="row">
@@ -312,10 +322,15 @@
               </div>
               <div class="form-group">
                 <label for="packageSelect">Select Your Package*</label>
-                <select class="form-control" id="packageSelect" required>
-                  <option>Package 1</option>
-                  <option>Package 2</option>
-                  <option>Package 3</option>
+                <select
+                  class="form-control"
+                  id="packageSelect"
+                  size="3"
+                  required
+                >
+                  <option>Essential Clean</option>
+                  <option>Premium Shine</option>
+                  <option>Ultimate Perfection</option>
                 </select>
               </div>
               <div class="form-group">
@@ -327,7 +342,6 @@
                   type="datetime-local"
                   id="booking-time"
                   name="booking-time"
-                  value="2023-11-22T09:00"
                   min="2023-11-22T09:00"
                   max="2024-11-22T17:00"
                   required
@@ -370,7 +384,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">Thank You!</h5>
             <button
               type="button"
               class="close"
@@ -401,7 +415,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Scripts for Bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
