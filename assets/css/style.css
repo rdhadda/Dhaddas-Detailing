@@ -27,7 +27,7 @@ body {
   transform: scale(1.2);
 }
 
-/* ---------------------------------------------------------------------------Hero-Section */
+/* ---------------------------------------------------------------------------Hero-Section index.html */
 
 #hero-section {
   position: relative;
@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#hero-text {
+#hero-text-background {
   width: 500px;
   height: 150px;
   background-color: rgba(241, 109, 107, 0.7);
@@ -50,7 +50,7 @@ body {
   left: 10px;
 }
 
-#hero-text h3 {
+#hero-text-background h3 {
   color: #fafafa;
   font-size: 200%;
   letter-spacing: 2px;
@@ -60,18 +60,10 @@ body {
   left: 10px;
 }
 
-#hero-packages-section {
-  position: relative;
-}
-
-#hero-packages-section #hero-packages-image #hero-packages-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* ---------------------------------------------------------------------------Hero-Section Packages & Gallery.html */
 
 #hero-packages-image {
-  background-image: url("../img/mustang.webp");
+  background-image: url("../img/andre-tan-DJviYeGtymc-unsplash.webp");
   height: 65vh;
   background-size: cover;
   background-position: center;
@@ -81,7 +73,7 @@ body {
   justify-content: center;
 }
 
-#hero-packages-text {
+.hero-pg-text {
   width: 500px;
   height: 150px;
   background-color: rgba(241, 109, 107, 0.7);
@@ -91,11 +83,22 @@ body {
   justify-content: center;
 }
 
-#hero-packages-text h3 {
+.hero-pg-text h3 {
   color: #fafafa;
   font-size: 200%;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+#hero-gallery-image {
+  background-image: url("../img/tommy-de-giorgio-xOvGzBUb5ts-unsplash.webp");
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------------------------Who Are We? */
@@ -115,23 +118,14 @@ body {
   margin-top: 15px;
 }
 
-hr {
-  border: none;
-}
-
-.grid-image {
-  height: 400px;
-  width: 400px;
-}
-
 /* ---------------------------------------------------------------------------Three Images */
 
-.images-container {
+#images-container {
   margin-top: 2rem;
 }
 
 /* ---------------------------------------------------------------------------What Our Customers Said */
-.testimonials-container {
+#testimonials-container {
   margin-top: 2.5rem;
 }
 
@@ -140,16 +134,12 @@ hr {
 }
 
 /* ---------------------------------------------------------------------------Where to Find Us */
-.bg-color-find-us {
-  background-color: rgba(241, 109, 107, 0.7);
-}
-
 #map {
   border: none;
   margin: 0 auto;
 }
 
-.container-wrapper {
+#container-wrapper {
   background-color: rgba(241, 109, 107, 1);
   margin-top: 50px;
 }
@@ -198,6 +188,18 @@ hr {
   padding: 0;
 }
 
+.bg-red .packages-list-items {
+  color: #0f0f0f;
+}
+
+.bg-red h2 {
+  color: #0f0f0f;
+}
+
+.bg-red p {
+  color: #0f0f0f;
+}
+
 .bg-red {
   border-radius: 20px;
   background-color: rgba(241, 109, 107, 1);
@@ -212,7 +214,7 @@ hr {
   padding-top: 10px;
 }
 
-.packages-text {
+.pg-text {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -254,37 +256,53 @@ footer p {
   margin-top: 10px;
 }
 
+/* ---------------------------------------------------------------------------Gallery */
+
+.lrg-image {
+  max-height: 500px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.sml-image {
+  max-height: 215px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
 /* ---------------------------------------------------------------------------Media Queries */
 
 @media screen and (max-width: 768px) {
-  #hero-text {
+  #hero-text-background {
     width: 200px;
     height: 160px;
   }
 
-  #hero-text h3 {
+  #hero-text-background h3 {
     font-size: 150%;
   }
 
-  #hero-packages-text {
+  .hero-pg-text {
     width: 200px;
     height: 160px;
   }
 
-  #hero-packages-text h3 {
+  .hero-pg-text h3 {
     color: #fafafa;
     font-size: 150%;
   }
 
   .bg-red {
     transform: scale(1);
-    margin-right: none;
+    margin-right: 0;
     border-radius: 0;
     padding-top: 10px;
   }
 
   .bg-grey {
-    margin-right: none;
+    margin-right: 0;
     border-radius: 0;
     padding-top: 10px;
   }
