@@ -119,6 +119,7 @@ The website consists of three pages and a modal. Home, Packages, Gallery and Boo
 - A hero image displaying a photograph of a car dripping in soap suds.
 - A heading and paragraph explaining who Dhadda's Detailing are.
 - Three images of clean cars with a central button which takes the user through to the packages page.
+- A testimonials section from previous customers. Again, this will give confidence to the user in the companies ability.
 - A where to find us section, displaying a map from Google and the company address and phone number.
 
 #### Packages Page
@@ -130,13 +131,18 @@ The website consists of three pages and a modal. Home, Packages, Gallery and Boo
 #### Gallery Page
 
 - A hero image displaying a clean car, to keep in theme with the rest of the website.
-- A carousel showcasing Dhadda's detailing completed work. This will give confidence to the user in the companies ability.
-- A testimonials section from previous customers. Again, this will give confidence to the user in the companies ability.
+- A grid gallery showcasing Dhadda's detailing completed work. This will give confidence to the user in the companies ability.
+
+#### Booking Modal
+
+- A modal which is initiated from a Book Now button on the nav bar and the packages page.
+- A form within the modal which requires the users input.
+- A thank you modal, once the user has submitted the requested information.
 
 #### Future Implementations
 
 - Products page - This page would sell Dhadda's Detailing's own products.
-- Add more services when they become available such a cermaic coating, PPF and window tinting.
+- Add more services when they become available such as PPF and window tinting.
 
 ### Accessibility
 
@@ -160,7 +166,7 @@ Git - For version control.
 
 Github - To save and store the files for the website.
 
-Bootstrap Version 4.6 - The framework for the website. Code for the navigation bar, carousel and modal.
+Bootstrap Version 4.6 - The framework for the website. Code for the navigation bar, modal and various other classes.
 
 Google Fonts - To import the fonts used on the website.
 
@@ -203,15 +209,44 @@ To clone the Dhadda's-Detailing repository:
 
 3. When adding the iframe to the the bootstrap column I wanted to centralize the iframe. I tried various classes off bootstrap to no avail. Through trial and error I found a combination of classes off bootstrap and my own custom CSS managed to overcome this obstacle.
 
-4. Images were appearing stretched. After a little research I came across a solution using max-width:100%; and height:auto which is the bootstrap class img-fluid.
+4. Images were appearing stretched. After a little research I came across a solution using max-width:100%; and height:auto which is the bootstrap class img-fluid. This prevents the image from becoming distorted, it also helps with the responsiveness of images.
 
-5. The middle image in the three images underneath the who are we section, was taller than the images beside it. I wanted them to all be the same height and width. At first i set a fixed height to the column and set the overflow to none. This looked great on the desktop but as the screen size decreased the same problem occurred. I felt that this wasn't a good viewing experience. In the end i ended up re-sizing the images using BIRME. The issue was resolved.
+5. The middle image in the three images underneath the who are we section, was taller than the images beside it. I wanted them to all be the same height and width. At first I set a fixed height to the column and set the overflow to none. This looked great on the desktop but as the screen size decreased the same problem occurred. I felt that this wasn't a good viewing experience. In the end i ended up re-sizing the images using BIRME. The issue was resolved.
+
+6. On the Packages.html page I've used Bootstraps grid layout. At first, I set the column width to 4. However, when adding a margin to each column it caused the end column to drop onto a new row. I didn't want this behavior. After reading the bootstrap literature, rather than taking up the whole row I opted for column width of 3 allowing me to center my content using the justify-content-center class and play around with margins.
 
 ### Known Bugs
 
 1. The required fields on my book now modal do not work. This is because i'm using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute doesn't take the required attribute into account. This should hopefully be resolved using Javascript.
 
 ### Testing User Stories
+
+#### First Time Visitors
+
+- I want to find out what services are on offer.
+
+  - Users are able to navigate to the Packages page to see what packages are available to them.
+    ![Packages page of website](docs/userstories/packages.png)
+
+- I want to see pictures of previous work carried out.
+
+  - Previous work can be viewed by visiting the gallery page.
+    ![Gallery page of website](docs/userstories/gallery.png)
+
+- I want to be able to navigate through the website with ease.
+
+  - The navigation bar at the top of the page allows easy navigation throughout the website.
+    ![Navigation bar of the website](docs/userstories/navbar.png)
+
+- I want to be able to book/make contact.
+  - User's can easily make a booking using hte Book Now button. This button leads to a modal, which allows a user to select various options in order to make a booking. Upon a successful booking the user is presented with a thank you message.
+    ![Booking Modal](docs/userstories/bookingmodal.png)
+    ![Thank you Modal](docs/userstories/thankyoumodal.png)
+
+#### Returning Visitors
+
+- I want to be able to make a booking
+  - Returning users can make a booking using the book now button on the navbar or from the book now button on the packages page.
 
 ### Lighthouse
 
