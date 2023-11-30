@@ -175,7 +175,7 @@ body {
 
 .packages p {
   color: #fafafa;
-  font-family: "Roboto";
+  font-family: "roboto";
   letter-spacing: 1px;
   font-size: 150%;
 }
@@ -186,18 +186,6 @@ body {
   line-height: 30px;
   color: #fafafa;
   padding: 0;
-}
-
-.bg-red .packages-list-items {
-  color: #0f0f0f;
-}
-
-.bg-red h2 {
-  color: #0f0f0f;
-}
-
-.bg-red p {
-  color: #0f0f0f;
 }
 
 .bg-red {
@@ -212,6 +200,18 @@ body {
   border-radius: 20px;
   background-color: #343a40;
   padding-top: 10px;
+}
+
+.bg-red h2 {
+  color: #0f0f0f;
+}
+
+.bg-red .packages-list-items {
+  color: #0f0f0f;
+}
+
+.bg-red p {
+  color: #0f0f0f;
 }
 
 .pg-text {
@@ -259,14 +259,19 @@ footer p {
 /* ---------------------------------------------------------------------------Gallery */
 
 .lrg-image {
-  max-height: 500px;
+  max-height: 512px;
   width: 100%;
   overflow: hidden;
   padding: 0;
 }
 
+.lrg-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .sml-image {
-  max-height: 215px;
+  max-height: 256px;
   width: 100%;
   overflow: hidden;
   padding: 0;
