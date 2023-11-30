@@ -278,7 +278,10 @@ footer p {
   overflow: hidden;
   padding: 0;
 }
-
+.images {
+  width: 100%;
+  height: auto;
+}
 /* ---------------------------------------------------------------------------Media Queries */
 
 @media screen and (max-width: 768px) {
