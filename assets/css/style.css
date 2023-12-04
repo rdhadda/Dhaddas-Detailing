@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 body {
-  font-family: "roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ---------------------------------------------------------------------------Navbar */
+
+.bg-dark {
+  background-color: #242d34 !important ;
+}
 
 .navbar a img {
   height: 50px;
@@ -18,7 +22,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: #fafafa;
 }
 
 .navbar .navbar-toggler {
@@ -27,6 +31,16 @@ body {
 
 .navbar-brand:hover {
   transform: scale(1.2);
+}
+
+.btn-outline-light:hover {
+  color: #242d34;
+  background-color: #ebbc0e;
+  border-color: #f8f9fa;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ebbc0e;
 }
 
 /* ---------------------------------------------------------------------------Hero-Section index.html */
@@ -46,7 +60,7 @@ body {
 #hero-text-background {
   width: 500px;
   height: 150px;
-  background-color: rgba(241, 109, 107, 0.7);
+  background-color: rgba(235, 188, 14, 0.9);
   position: absolute;
   bottom: 30px;
   left: 10px;
@@ -78,16 +92,17 @@ body {
 .hero-pg-text {
   width: 500px;
   height: 150px;
-  background-color: rgba(241, 109, 107, 0.7);
+  background-color: rgba(235, 188, 14, 0.9);
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-pg-text h3 {
+.hero-pg-text h1 {
   color: #fafafa;
-  font-size: 200%;
+  font-size: 300%;
+  font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -132,7 +147,7 @@ body {
 }
 
 .blockquote-footer {
-  background-color: white;
+  background-color: #fafafa;
 }
 
 /* ---------------------------------------------------------------------------Where to Find Us */
@@ -142,13 +157,13 @@ body {
 }
 
 #container-wrapper {
-  background-color: rgba(241, 109, 107, 1);
+  background-color: rgba(235, 188, 14, 1);
   margin-top: 50px;
 }
 
 .find-us-header {
   margin-top: 25px;
-  color: #0f0f0f;
+  color: #242d34;
 }
 
 .contact {
@@ -157,7 +172,7 @@ body {
 }
 
 .contact p {
-  color: #0f0f0f;
+  color: #242d34;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -171,28 +186,28 @@ body {
 
 .packages h2 {
   color: #fafafa;
-  font-family: "roboto";
+  font-family: "Roboto";
   letter-spacing: 3px;
 }
 
 .packages p {
   color: #fafafa;
-  font-family: "roboto";
+  font-family: "Roboto";
   letter-spacing: 1px;
   font-size: 150%;
 }
 .packages-list-items {
   list-style-type: none;
-  font-family: "roboto";
+  font-family: "Roboto";
   letter-spacing: 1px;
   line-height: 30px;
   color: #fafafa;
   padding: 0;
 }
 
-.bg-red {
+.bg-yellow {
   border-radius: 20px;
-  background-color: rgba(241, 109, 107, 1);
+  background-color: rgba(235, 188, 14, 1);
   transform: scale(1.1);
   z-index: 1;
   padding-top: 8px;
@@ -200,20 +215,23 @@ body {
 
 .bg-grey {
   border-radius: 20px;
-  background-color: #343a40;
+  background-color: #242d34;
   padding-top: 10px;
 }
 
-.bg-red h2 {
-  color: #0f0f0f;
+.bg-yellow h2 {
+  color: #242d34;
+  font-weight: 600;
 }
 
-.bg-red .packages-list-items {
-  color: #0f0f0f;
+.bg-yellow .packages-list-items {
+  color: #242d34;
+  font-weight: 500;
 }
 
-.bg-red p {
-  color: #0f0f0f;
+.bg-yellow p {
+  color: #242d34;
+  font-weight: 500;
 }
 
 .pg-text {
@@ -226,7 +244,7 @@ body {
 
 footer {
   font-family: "roboto";
-  background-color: #343a40;
+  background-color: #242d34;
   color: white;
 }
 
@@ -247,15 +265,27 @@ footer p {
 /* ---------------------------------------------------------------------------Booking Modal */
 
 .modal-header {
-  background-color: rgba(241, 109, 107, 1);
+  background-color: rgba(235, 188, 14, 1);
 }
 
 .modal-header h5 {
-  color: #0f0f0f;
+  color: #242d34;
 }
 
 .text-area {
   margin-top: 10px;
+}
+
+.btn-primary {
+  color: #242d34;
+  background-color: rgba(235, 188, 14, 1);
+  border-color: rgba(235, 188, 14, 1);
+}
+
+.btn-primary:hover {
+  color: rgba(235, 188, 14, 1);
+  background-color: #242d34;
+  border-color: #242d34;
 }
 
 /* ---------------------------------------------------------------------------Gallery */
@@ -287,7 +317,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
   #hero-text-background {
-    width: 200px;
+    width: 250px;
     height: 160px;
   }
 
@@ -296,7 +326,7 @@ footer p {
   }
 
   .hero-pg-text {
-    width: 200px;
+    width: 300px;
     height: 160px;
   }
 
