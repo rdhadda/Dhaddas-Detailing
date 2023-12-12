@@ -2,9 +2,9 @@
 
 Dhadda's Detailing website is designed to be a responsive website. It allows visitors to view the services on offer and potentially make a booking.
 
-![Dhadda's Detailing. Screen shot of website]
+![Dhadda's Detailing. Screen shot of website](docs/Am_I_Responsive.png)
 
-[View Dhadda's Detailing on Github Pages]
+[View Dhadda's Detailing on Github Pages](https://rdhadda.github.io/Dhaddas-Detailing/index.html)
 
 ## CONTENTS
 
@@ -39,14 +39,9 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
   - [Known Bugs](#Known-Bugs)
   - [Testing User Stories](#Testing-User-Stories)
   - [Lighthouse](#Lighthouse)
-    - [Index Page](#Index-Page)
-    - [Books Page](#Books-Page)
-    - [Contact Us Page](#Contact-Us-Page)
-    - [Thank You Page](#Thank-You-Page)
   - [Full Testing](#Full-Testing)
 - [Credits](#Credits)
   - [Code Used](#Code-Used)
-  - [Content](#Content)
   - [Media](#Media)
   - [Acknowledgments](#Acknowledgments)
 
@@ -54,7 +49,7 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
 
 ## User Experience (UX)
 
-Dhadda's Detailing is a website demonstrating it's expertise in car detailing. It's main aim is to increase bookings via the website.
+Dhadda's Detailing is a website demonstrating it's expertise in car detailing. It's main aim is to drive bookings via the website.
 
 ### User Stories
 
@@ -80,57 +75,61 @@ Dhadda's Detailing is a website demonstrating it's expertise in car detailing. I
 
 ### Colour Scheme
 
-![Dhadda's Detailing Colour Palette]
+![Dhadda's Detailing Colour Palette](docs/colourscheme.png)
+
+I opted for a clean modern colour pallete where each colour compliments one another. The colour pallete was created using the [coolors](https://coolors.co/) website.
 
 ### Typography
 
 Google Fonts was used for the following fonts:
 
-- is used for headings on the site. It is a serif font.
+- Roboto is used across the site for all text on the site. It is a sans-serif font.
 
-- is used for the body text on the site. It is a sans-serif font.
+![Roboto Google Fonts](docs/Roboto.png)
 
 ### Imagery
 
-The images on the webpage were taken from unsplash.com. I have credited these in the [credits](#credits) section.
+All images on the webpage were taken from unsplash.com. I have credited these in the [credits](#credits) section.
 
 ### Wireframes
 
-Wireframes were created for mobile, tablet and desktop.
+Wireframes were created for mobile, tablet and desktop using Balsamiq.
 
-[Home Page Wireframe]
+[Desktop Wireframes](docs/Desktop%20Wireframe.png)
 
-[Packages Wireframe]
+[Tablet Wireframes](docs/Tablet%20Wireframe.png)
 
-[Book Now Wireframe]
+[Mobile Wireframes](docs/Mobile%20Wireframe.png)
 
 ### Features
 
 The website consists of three pages and a modal. Home, Packages, Gallery and Booking modal.
 
-#### All four pages have the following elements in common:
+#### All three pages have the following elements in common:
 
-- A responsive navigation bar at the top of the page allowing the user to easily explore the website. On the left hand side of the navigation bar is the Dhadda's Detailing logo. On the right hand-side of the navigation bar are links to the packages page, gallery page and booking page. To enable a positive user experience the navigation links are condensed into a burger toggler button on smaller devices. This was done to prevent the navigation bar from looking cluttered.
+- A responsive navigation bar at the top of the page allowing the user to easily explore the website. On the left hand side of the navigation bar is the Dhadda's Detailing logo. On the right hand-side of the navigation bar are links to the packages page, gallery page and booking modal. To enable a positive user experience the navigation links are condensed into a burger toggler button on smaller devices. This was done to prevent the navigation bar from looking cluttered.
 
-- A footer which comprises of social media links to Facebook, Instagram, Twitter and Youtube. The footer also contains the address and phone number of the company.
+- A footer which comprises of social media links to Facebook, Instagram, Twitter and Youtube. The footer also contains the address of the company.
 
 #### Home Page
 
 - A hero image displaying a photograph of a car dripping in soap suds.
 - A heading and paragraph explaining who Dhadda's Detailing are.
-- Three images of clean cars with a central button which takes the user through to the packages page.
+- Three images of clean cars.
 - A testimonials section from previous customers. Again, this will give confidence to the user in the companies ability.
-- A where to find us section, displaying a map from Google and the company address and phone number.
+- A where to find us section, displaying a map from Google and the company address, email and phone number.
 
 #### Packages Page
 
 - A hero image displaying a clean car.
 - The three packages which are on offer to the user.
+- Text explaining the packages.
 - A book now button underneath the packages to allow the user easy access to the bookings modal.
 
 #### Gallery Page
 
 - A hero image displaying a clean car, to keep in theme with the rest of the website.
+- Text welcoming users to the gallery page.
 - A grid gallery showcasing Dhadda's detailing completed work. This will give confidence to the user in the companies ability.
 
 #### Booking Modal
@@ -150,6 +149,7 @@ I've taken care when coding to make the website as user-friendly and as accessib
 
 - Using semantic HTML.
 - Using descriptive alt attributes for images throughout the site.
+- Selecting a sans-serif font which is suitable for users with dyslexia.
 - Ensuring that the site has an adequate amount of colour contrast.
 
 ## Technologies Used
@@ -160,46 +160,85 @@ I've taken care when coding to make the website as user-friendly and as accessib
 
 ### Frameworks, Libraries & Programs Used
 
-Balsamiq - Used to create wireframes.
+[Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
-Git - For version control.
+[Visual Studio Code](https://code.visualstudio.com/) IDE used to create the website.
 
-Github - To save and store the files for the website.
+[Git](https://git-scm.com/) - For version control.
 
-Bootstrap Version 4.6 - The framework for the website. Code for the navigation bar, modal and various other classes.
+[Github](https://github.com/) - To save and store the files for the website.
 
-Google Fonts - To import the fonts used on the website.
+[Bootstrap Version 4.2.1](https://getbootstrap.com/docs/4.2/getting-started/introduction/) - The framework for the website. Code for the navigation bar, modal and various other classes.
+
+[Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 [Birme](https://www.birme.net/) To resize images and change to webp format.
 
-## Deployment
+[Am I Responsive](https://ui.dev/amiresponsive) To show the website accross a range of devices.
+
+[Fontawsome](https://fontawesome.com/start) For social links.
+
+[Unsplash](https://unsplash.com/) For all images.
+
+[My Free Logo Maker](https://myfreelogomaker.com/onboarding) For the site logo.
+
+[Squoosh](https://squoosh.app/) Compress images.
+
+## Deployment & Local Deployment
 
 ### Deployment
 
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project.?????????????
+2. Find the repository for this project, Dhaddas-Detailing
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
 6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, rdhadda/Dhaddas-Detailing
+3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
 To clone the Dhadda's-Detailing repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, ????????
+2. Go to the repository for this project, rdhadda/Dhaddas-Detailing
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
 
+Testing was continuous throughout the website build. I used Chrome developer tools to identify and address any issues as they arose.
+
+- Upon meeting with my mentor we identified that my initial colour scheme had contrast issues. This has been resolved by choosing a new colour scheme which allows for adequate contrast been background and foreground colours.
+
+- My mentor also pointed out that the images within the website were .png format which hindered the performance of the website. To combat this all images have been converted to .webp format to significantly improve performance.
+
+- On the Packages page. the list items were out of alignment and not centered even after using the bootstrap text-center class. This was due to padding, which has now been removed to center the list items.
+
 ### W3C Validator
+
+W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+One issue I was was coming across when testing my html page was an error displayed by w3. Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.' However, even after removing these trailing slashes when saving my document Visual Studio Code would re-enter them. Luckily as w3 states these have no effect on the code.
+
+- [Index Page HTML](docs/w3%20Index.html.png)
+- [Packages Page HTML](docs/w3%20Packages.html.png)
+- [Gallery Page HTML](docs/w3%20Gallery.html.png)
+- [style.css CSS](docs/w3%20Style.css.png)
 
 ### Solved Bugs
 
@@ -215,9 +254,15 @@ To clone the Dhadda's-Detailing repository:
 
 6. On the Packages.html page I've used Bootstraps grid layout. At first, I set the column width to 4. However, when adding a margin to each column it caused the end column to drop onto a new row. I didn't want this behavior. After reading the bootstrap literature, rather than taking up the whole row I opted for column width of 3 allowing me to center my content using the justify-content-center class and play around with margins.
 
+7. When deploying my website via github I noticed that some of the images on the gallery page were no longer rendering properly. After a google search I realised that the issue was to do with the aspect ratio of my images. After changing the aspect ratio the images now render correctly.
+
 ### Known Bugs
 
 1. The required fields on my book now modal do not work. This is because i'm using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute doesn't take the required attribute into account. This should hopefully be resolved using Javascript.
+
+2. The lower large image on the gallery page on the desktop view is out of alignment with the 4 images to the left of it.
+
+3. The map on the Homepage points to a coffee house in Ireland. As Dhadda's Detailing is not a real business I opted to use the iframe link from the coffee coders project.
 
 ### Testing User Stories
 
@@ -239,8 +284,11 @@ To clone the Dhadda's-Detailing repository:
     ![Navigation bar of the website](docs/userstories/navbar.png)
 
 - I want to be able to book/make contact.
+
   - User's can easily make a booking using hte Book Now button. This button leads to a modal, which allows a user to select various options in order to make a booking. Upon a successful booking the user is presented with a thank you message.
+
     ![Booking Modal](docs/userstories/bookingmodal.png)
+
     ![Thank you Modal](docs/userstories/thankyoumodal.png)
 
 #### Returning Visitors
@@ -248,12 +296,121 @@ To clone the Dhadda's-Detailing repository:
 - I want to be able to make a booking
   - Returning users can make a booking using the book now button on the navbar or from the book now button on the packages page.
 
-### Lighthouse
+### Lighthouse Testing
+
+I took the opportunity to utilize Lighthouse within Chrome Developer Tools. This allowed me to test for performance, accessibility, best practices and the SEO (search engine optimization) of the website.
+
+#### Index.html Desktop Page
+
+![Lighthouse index.html Desktop](docs/Lighthouse%20Index.html%20Desktop.png)
+
+#### Packages.html Desktop Page
+
+![Lighthouse packages.html Desktop](docs/Lighthouse%20packages.html%20Desktop.png)
+
+#### Gallery.html Desktop Page
+
+![Lighthouse gallery.html Desktop](docs/Lighthouse%20gallery.html%20Desktop.png)
+
+The main recommendation to improve my lighthouse score were to appropriately size images. I achieved this by utilizing websites such as Birme and Sqoosh.
+
+Another recommendation is to Eliminate render-blocking resources. However, these are resources such as Bootstrap and Google font's. These are key resources to my website.
+
+Overall i'm happy with the Lighthouse scores for my desktop version of Dhadda's Detailing.
+
+### Mobile Testing
+
+#### Index.html Desktop Page
+
+![Lighthouse index.html Mobile](docs/Lighthouse%20index.html%20Mobile.png)
+
+#### Packages.html Desktop Page
+
+![Lighthouse packages.html Mobile](docs/Lighthouse%20packages.html%20Mobile.png)
+
+#### Gallery.html Desktop Page
+
+![Lighthouse gallery.html Mobile](docs/Lighthouse%20gallery.html%20Mobile.png)
+
+During mobile testing Lighthouse suggested using the correct image sizes. In order to do this I have two versions of the same image for the gallery page. I used the picture element to include a media query instructing the browser to use the lower resolution image below a viewport of 500px. This marginally improved my performance. Credit to https://www.youtube.com/watch?v=fp9eVtkQ4EA&t=519s
+
+Again the main factor affecting the performance across all three pages is to Eliminate render blocking resources. As these resources play a key role in the website it's difficult to eliminate them.
+
+I feel there is room for improvement for the performance of the mobile version of Dhadda's detailing. As my knowledge grows through the course I hope to improve on this.
+
+### Full Testing
+
+Full testing was performed on the following devices:
+
+- Laptop:
+
+  - Macbook Pro 2015 13 inch screen
+
+- Mobile Devices:
+  - iPhone 12 pro.
+  - iPhone 11 pro.
+  - Phone X.
+
+Each device tested the site using the following browsers:
+
+- Google Chrome
+- Safari
+
+#### Home Page
+
+| Feature            | Expected Outcome                                                 | Testing Performed                  | Result                                      | Pass/Fail |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- | --------- |
+| The sites logo     | Link directs the user back to the home page                      | Clicked title                      | Home page reloads                           | Pass      |
+| Packages link      | Link directs user to Packages page                               | Clicked link                       | Packages page loads                         | Pass      |
+| Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
+| Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
+| Links hover effect | All nav bar links highlight yellow when hovered over             | Hover over each button on the page | Each button turned yellow when hovered over | Pass      |
+| Social links       | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
+| Book Now Link      | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
+
+#### Packages Page
+
+| Feature                      | Expected Outcome                                                 | Testing Performed                  | Result                                      | Pass/Fail |
+| ---------------------------- | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- | --------- |
+| The sites logo               | Link directs the user back to the home page                      | Clicked title                      | Home page reloads                           | Pass      |
+| Packages link                | Link directs user to Packages page                               | Clicked link                       | Packages page loads                         | Pass      |
+| Gallery link                 | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
+| Links hover effect           | All nav bar links highlight yellow when hovered over             | Hover over each button on the page | Each button turned yellow when hovered over | Pass      |
+| Social links                 | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
+| Book Now link                | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
+| Book Now link under packages | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
+
+#### Gallery Page
+
+| Feature            | Expected Outcome                                                 | Testing Performed                  | Result                                      | Pass/Fail |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- | --------- |
+| The sites logo     | Link directs the user back to the home page                      | Clicked title                      | Home page reloads                           | Pass      |
+| Packages link      | Link directs user to Packages page                               | Clicked link                       | Packages page loads                         | Pass      |
+| Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
+| Links hover effect | All nav bar links highlight yellow when hovered over             | Hover over each button on the page | Each button turned yellow when hovered over | Pass      |
+| Social links       | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
+| Book Now Link      | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
+
+#### Booking Modal
+
+| Feature      | Expected Outcome         | Testing Performed | Result                   | Pass/Fail |
+| ------------ | ------------------------ | ----------------- | ------------------------ | --------- |
+| Book Button  | Opens confirmation modal | Clicked button    | Confirmation modal opens | Pass      |
+| Close Button | Closes modal             | Clicked button    | Modal closes             | Pass      |
 
 ## Credits
 
-### Content
+### Code Used
+
+[Picture Attribute](https://www.youtube.com/watch?v=fp9eVtkQ4EA&t=519s) - Web Dev Simplified Youtube Channel.
 
 ### Media
 
+All my media was taken from [Unsplash](https://unsplash.com/).
+
 ### Acknowledgments
+
+- My mentor for their guidance and support.
+- My cohort for support.
+- Code institute for informative course material.
+- The slack community for help and support.
