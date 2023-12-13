@@ -23,17 +23,14 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Dhadda's Detailing</title>
+    <!-- Favicon code taken from w3school -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
   </head>
   <body>
     <!-- Navigation Bar - Bootstrap code used and customised -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a href="index.html" class="navbar-brand">
-        <img
-          src="assets/img/White-logo.webp"
-          alt="Dhadda's Detailing Logo"
-          width="122"
-          height="50"
-        />
+        <img src="assets/img/white-logo.webp" alt="Dhadda's Detailing Logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -109,28 +106,22 @@
         <div class="col d-none d-sm-block">
           <img
             class="images"
-            src="assets/img/neelabh-raj-rS9PBJBY5pc-unsplash.webp"
+            src="assets/img/polish-left.webp"
             alt="picture of a car being polished"
-            height="350"
-            width="350"
           />
         </div>
         <div class="col">
           <img
             class="images"
-            src="assets/img/sanmeet-chahil-dveDkZQJVjQ-unsplash.webp"
+            src="assets/img/m4cs.webp"
             alt="picture of a bmw m4cs"
-            height="350"
-            width="350"
           />
         </div>
         <div class="col d-none d-sm-block">
           <img
             class="images"
-            src="assets/img/neelabh-raj-cw1914zDHUs-unsplash.webp"
+            src="assets/img/polish-right.webp"
             alt="picture of a car being polished"
-            height="350"
-            width="350"
           />
         </div>
       </div>
@@ -148,11 +139,9 @@
           <div class="media">
             <div class="d-none d-sm-block">
               <img
-                src="assets/img/girl-image.webp"
-                alt=""
+                src="assets/img/guy-image.webp"
+                alt="Image of a male"
                 class="rounded-circle mr-3"
-                height="100"
-                width="100"
               />
             </div>
             <div class="media-body">
@@ -173,11 +162,9 @@
           <div class="media">
             <div>
               <img
-                src="assets/img/guy-image.webp"
-                alt=""
+                src="assets/img/girl-image.webp"
+                alt="Image of a female"
                 class="rounded-circle mr-3"
-                height="100"
-                width="100"
               />
             </div>
             <div class="media-body">
@@ -219,8 +206,7 @@
               <!-- Map taken from coders coffee project -->
               <iframe
                 id="map"
-                class="d-flex justify-content-center w-100"
-                height="300"
+                class="d-flex justify-content-center w-100 h-100"
                 src="https://bit.ly/2QVfkiy"
                 aria-label="Dhadda's Detailing Location Map"
               ></iframe>
@@ -332,10 +318,10 @@
               <div class="form-group">
                 <label for="telephone">Telephone Number*</label>
                 <input
-                  type="text"
+                  type="tel"
                   class="form-control"
                   id="telephone"
-                  placeholder="07986257874"
+                  pattern="[0-9]{11}"
                   required
                 />
               </div>
