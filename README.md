@@ -414,6 +414,17 @@ Each device tested the site using the following browsers:
 | Social links       | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
 | Book Now Link      | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
 
+#### 404 Page
+
+| Feature            | Expected Outcome                                                 | Testing Performed                  | Result                                      | Pass/Fail |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- | --------- |
+| The sites logo     | Link directs the user back to the home page                      | Clicked title                      | Home page reloads                           | Pass      |
+| Packages link      | Link directs user to Packages page                               | Clicked link                       | Packages page loads                         | Pass      |
+| Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
+| Links hover effect | All nav bar links highlight yellow when hovered over             | Hover over each button on the page | Each button turned yellow when hovered over | Pass      |
+| Social links       | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
+| Book Now link      | Opens up booking modal                                           | Clicked link                       | Booking modal opens                         | Pass      |
+
 #### Booking Modal
 
 | Feature      | Expected Outcome         | Testing Performed | Result                   | Pass/Fail |
