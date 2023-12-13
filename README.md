@@ -24,7 +24,7 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
 - [Technologies Used](#Technologies-Used)
 
   - [Languages Used](#Languages-Used)
-  - [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
+  - [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-and-Programs-Used)
 
 - [Deployment and Local Development](#Deployment-and-Local-Development)
 
@@ -159,7 +159,7 @@ I've taken care when coding to make the website as user-friendly and as accessib
 
 - HTML and CSS
 
-### Frameworks, Libraries & Programs Used
+### Frameworks, Libraries and Programs Used
 
 [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
