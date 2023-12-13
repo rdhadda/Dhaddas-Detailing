@@ -2,7 +2,7 @@
 
 Dhadda's Detailing website is designed to be a responsive website. It allows visitors to view the services on offer and potentially make a booking.
 
-![Dhadda's Detailing. Screen shot of website](docs/Am_I_Responsive.png)
+![Dhadda's Detailing. Screen shot of website](docs/am-i-responsive.png)
 
 [View Dhadda's Detailing on Github Pages](https://rdhadda.github.io/Dhaddas-Detailing/index.html)
 
@@ -38,7 +38,8 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
   - [Solved Bugs](#Solved-Bugs)
   - [Known Bugs](#Known-Bugs)
   - [Testing User Stories](#Testing-User-Stories)
-  - [Lighthouse](#Lighthouse)
+  - [Lighthouse Testing](#Lighthouse-Testing)
+  - [Wave Testing](#Wave-Testing)
   - [Full Testing](#Full-Testing)
 - [Credits](#Credits)
   - [Code Used](#Code-Used)
@@ -85,7 +86,7 @@ Google Fonts was used for the following fonts:
 
 - Roboto is used across the site for all text on the site. It is a sans-serif font.
 
-![Roboto Google Fonts](docs/Roboto.png)
+![Roboto Google Fonts](docs/roboto.png)
 
 ### Imagery
 
@@ -95,11 +96,11 @@ All images on the webpage were taken from unsplash.com. I have credited these in
 
 Wireframes were created for mobile, tablet and desktop using Balsamiq.
 
-[Desktop Wireframes](docs/Desktop%20Wireframe.png)
+[Desktop Wireframes](docs/desktop-wireframe.png)
 
-[Tablet Wireframes](docs/Tablet%20Wireframe.png)
+[Tablet Wireframes](docs/tablet-wireframe.png)
 
-[Mobile Wireframes](docs/Mobile%20Wireframe.png)
+[Mobile Wireframes](docs/mobile-wireframe.png)
 
 ### Features
 
@@ -117,7 +118,7 @@ The website consists of three pages and a modal. Home, Packages, Gallery and Boo
 - A heading and paragraph explaining who Dhadda's Detailing are.
 - Three images of clean cars.
 - A testimonials section from previous customers. Again, this will give confidence to the user in the companies ability.
-- A where to find us section, displaying a map from Google and the company address, email and phone number.
+- A where to find us section, displaying a map from Google and the company address, email and phone number. The map on the Homepage points to a coffee house in Ireland. As Dhadda's Detailing is not a real business I opted to use the iframe link from the coffee coders project.
 
 #### Packages Page
 
@@ -186,7 +187,7 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Squoosh](https://squoosh.app/) Compress images.
 
-## Deployment & Local Deployment
+## Deployment & Local Development
 
 ### Deployment
 
@@ -235,10 +236,11 @@ W3C validator was used to validate the HTML on all pages of the website. It was 
 
 One issue I was was coming across when testing my html page was an error displayed by w3. Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.' However, even after removing these trailing slashes when saving my document Visual Studio Code would re-enter them. Luckily as w3 states these have no effect on the code.
 
-- [Index Page HTML](docs/w3%20Index.html.png)
-- [Packages Page HTML](docs/w3%20Packages.html.png)
-- [Gallery Page HTML](docs/w3%20Gallery.html.png)
-- [style.css CSS](docs/w3%20Style.css.png)
+- [Index Page HTML](docs/w3-index.html.png)
+- [Packages Page HTML](docs/w3-packages.html.png)
+- [Gallery Page HTML](docs/w3-gallery.html.png)
+- [404 Page HTML](docs/w3-404.html.png)
+- [style.css CSS](docs/w3-style.css.png)
 
 ### Solved Bugs
 
@@ -256,13 +258,11 @@ One issue I was was coming across when testing my html page was an error display
 
 7. When deploying my website via github I noticed that some of the images on the gallery page were no longer rendering properly. After a google search I realised that the issue was to do with the aspect ratio of my images. After changing the aspect ratio the images now render correctly.
 
+8.The lower large image on the gallery page on the desktop view is out of alignment with the 4 images to the left of it. After my meeting with my mentor he helped me diagnose the issue. The container for the image had a max height set to 512px, which was limiting the size of the image. I've since removed this and the pictures are now aligned.
+
 ### Known Bugs
 
 1. The required fields on my book now modal do not work. This is because i'm using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute doesn't take the required attribute into account. This should hopefully be resolved using Javascript.
-
-2. The lower large image on the gallery page on the desktop view is out of alignment with the 4 images to the left of it.
-
-3. The map on the Homepage points to a coffee house in Ireland. As Dhadda's Detailing is not a real business I opted to use the iframe link from the coffee coders project.
 
 ### Testing User Stories
 
@@ -302,15 +302,19 @@ I took the opportunity to utilize Lighthouse within Chrome Developer Tools. This
 
 #### Index.html Desktop Page
 
-![Lighthouse index.html Desktop](docs/Lighthouse%20Index.html%20Desktop.png)
+![Lighthouse index.html Desktop](docs/lighthouse-index-desktop.png)
 
 #### Packages.html Desktop Page
 
-![Lighthouse packages.html Desktop](docs/Lighthouse%20packages.html%20Desktop.png)
+![Lighthouse packages.html Desktop](docs/lighthouse-packages-desktop.png)
 
 #### Gallery.html Desktop Page
 
-![Lighthouse gallery.html Desktop](docs/Lighthouse%20gallery.html%20Desktop.png)
+![Lighthouse gallery.html Desktop](docs/lighthouse-gallery-desktop.png)
+
+#### 404.html Desktop Page
+
+![Lighthouse 404.html Desktop](docs/lighthouse-404-desktop.png)
 
 The main recommendation to improve my lighthouse score were to appropriately size images. I achieved this by utilizing websites such as Birme and Sqoosh.
 
@@ -322,21 +326,25 @@ Overall i'm happy with the Lighthouse scores for my desktop version of Dhadda's 
 
 #### Index.html Desktop Page
 
-![Lighthouse index.html Mobile](docs/Lighthouse%20index.html%20Mobile.png)
+![Lighthouse index.html Mobile](docs/lighthouse-index-mobile.png)
 
 #### Packages.html Desktop Page
 
-![Lighthouse packages.html Mobile](docs/Lighthouse%20packages.html%20Mobile.png)
+![Lighthouse packages.html Mobile](docs/lighthouse-packages-mobile.png)
 
 #### Gallery.html Desktop Page
 
-![Lighthouse gallery.html Mobile](docs/Lighthouse%20gallery.html%20Mobile.png)
+![Lighthouse gallery.html Mobile](docs/lighthouse-gallery-mobile.png)
 
-During mobile testing Lighthouse suggested using the correct image sizes. In order to do this I have two versions of the same image for the gallery page. I used the picture element to include a media query instructing the browser to use the lower resolution image below a viewport of 500px. This marginally improved my performance. Credit to https://www.youtube.com/watch?v=fp9eVtkQ4EA&t=519s
+#### 404.html Desktop Page
 
-Again the main factor affecting the performance across all three pages is to Eliminate render blocking resources. As these resources play a key role in the website it's difficult to eliminate them.
+![Lighthouse 404.html Mobile](docs/lighthouse-404-mobile.png)
 
-I feel there is room for improvement for the performance of the mobile version of Dhadda's detailing. As my knowledge grows through the course I hope to improve on this.
+The main factor affecting the performance across all three pages is to Eliminate render blocking resources. As these resources play a key role in the website it's difficult to eliminate them.
+
+I feel there is room for improvement for the performance of the mobile version of Dhadda's detailing. One method I tried to implement to improve this was to give my gallery images specific height and widths through media queries. Unfortunately this didn't improve my performance score. As my knowledge grows through the course I hope to improve on this.
+
+### Wave Testing
 
 ### Full Testing
 
@@ -362,7 +370,6 @@ Each device tested the site using the following browsers:
 | ------------------ | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------------------- | --------- |
 | The sites logo     | Link directs the user back to the home page                      | Clicked title                      | Home page reloads                           | Pass      |
 | Packages link      | Link directs user to Packages page                               | Clicked link                       | Packages page loads                         | Pass      |
-| Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
 | Gallery link       | Link directs user to Gallery page                                | Clicked link                       | Gallery page loads                          | Pass      |
 | Links hover effect | All nav bar links highlight yellow when hovered over             | Hover over each button on the page | Each button turned yellow when hovered over | Pass      |
 | Social links       | The corresponding social website opens on a new tab when clicked | Clicked social links               | Social website opens in new tab             | Pass      |
@@ -402,7 +409,7 @@ Each device tested the site using the following browsers:
 
 ### Code Used
 
-[Picture Attribute](https://www.youtube.com/watch?v=fp9eVtkQ4EA&t=519s) - Web Dev Simplified Youtube Channel.
+I've used code's and classes courtesy of bootstrap, this can be seen throughout my code with comments.
 
 ### Media
 
