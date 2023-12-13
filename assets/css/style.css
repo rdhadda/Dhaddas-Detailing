@@ -50,7 +50,7 @@ body {
 }
 
 #hero-image {
-  background-image: url("../img/andre-tan-pRppMPh4Zho-unsplash.webp");
+  background-image: url("../img/porsche-side.webp");
   height: 65vh;
   background-size: cover;
   background-position: center;
@@ -79,7 +79,7 @@ body {
 /* ---------------------------------------------------------------------------Hero-Section Packages & Gallery.html */
 
 #hero-packages-image {
-  background-image: url("../img/andre-tan-DJviYeGtymc-unsplash.webp");
+  background-image: url("../img/porsche-front.webp");
   height: 65vh;
   background-size: cover;
   background-position: center;
@@ -108,8 +108,19 @@ body {
 }
 
 #hero-gallery-image {
-  background-image: url("../img/tommy-de-giorgio-xOvGzBUb5ts-unsplash.webp");
+  background-image: url("../img/lamborghini-wheel.webp");
   height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-404-image {
+  background-image: url("../img/ferrari-front.webp");
+  height: 85vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -292,7 +303,6 @@ footer p {
 /* ---------------------------------------------------------------------------Gallery */
 
 .lrg-image {
-  max-height: 512px;
   width: 100%;
   overflow: hidden;
   padding: 0;
@@ -304,9 +314,6 @@ footer p {
 }
 
 .sml-image {
-  max-height: 256px;
-  width: 100%;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -351,5 +358,61 @@ footer p {
 
   .packages-container {
     margin-top: 0;
+  }
+
+  #top-lrg-grid-img {
+    height: 298px;
+    width: 360px;
+  }
+
+  #bottom-lrg-grid-image {
+    height: 348px;
+    width: 300px;
+  }
+
+  .top-sml-grid-image {
+    height: 125px;
+    width: 125px;
+  }
+
+  .bottom-small-grid-image {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .top-sml-grid-image {
+    height: 177px;
+    width: 177px;
+  }
+
+  .bottom-small-grid-image {
+    height: 177px;
+    width: 177px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-sml-grid-image {
+    height: 156px;
+    width: 156px;
+  }
+
+  .bottom-small-grid-image {
+    height: 156px;
+    width: 156px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-sml-grid-image {
+    height: 133px;
+    width: 133px;
+  }
+
+  .bottom-small-grid-image {
+    height: 133px;
+    width: 133px;
   }
 }
