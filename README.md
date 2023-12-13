@@ -8,7 +8,7 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
 
 ## CONTENTS
 
-- [User Experience (UX)](<#User-Experience-(UX)>)
+- [User Experience (UX)](#User-Experience-UX)
 
   - [User Stories](#User-Stories)
 
@@ -26,7 +26,7 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
   - [Languages Used](#Languages-Used)
   - [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
-- [Deployment & Local Development](#Deployment-&-Local-Development)
+- [Deployment and Local Development](#Deployment-and-Local-Development)
 
   - [Deployment](#Deployment)
   - [Local Development](#Local-Development)
@@ -187,7 +187,7 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Squoosh](https://squoosh.app/) Compress images.
 
-## Deployment & Local Development
+## Deployment and Local Development
 
 ### Deployment
 
