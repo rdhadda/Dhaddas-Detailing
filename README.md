@@ -346,6 +346,22 @@ I feel there is room for improvement for the performance of the mobile version o
 
 ### Wave Testing
 
+#### Index.html
+
+![Wave index.html Desktop](docs/wave-index.png)
+
+#### Packages.html
+
+![Wave packages.html Desktop](docs/wave-packages.png)
+
+#### Gallery.html
+
+![Wave gallery.html Desktop](docs/wave-gallery.png)
+
+#### 404.html
+
+![Wave 404.html Desktop](docs/wave-404.png)
+
 ### Full Testing
 
 Full testing was performed on the following devices:
