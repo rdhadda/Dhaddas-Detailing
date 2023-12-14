@@ -225,6 +225,7 @@
                   class="form-control"
                   id="name"
                   placeholder="Joe Bloggs"
+                  name="name"
                   required
                 />
               </div>
@@ -235,6 +236,7 @@
                   class="form-control"
                   id="email"
                   placeholder="name@example.com"
+                  name="email"
                   required
                 />
               </div>
@@ -245,6 +247,8 @@
                   class="form-control"
                   id="telephone"
                   pattern="[0-9]{11}"
+                  name="telephone"
+                  placeholder="07986257874"
                   required
                 />
               </div>
@@ -254,6 +258,7 @@
                   class="form-control"
                   id="packageSelect"
                   size="3"
+                  name="package"
                   required
                 >
                   <option>Essential Clean</option>
@@ -265,13 +270,13 @@
                 <label for="booking-time"
                   >Choose a date and time for your appointment*</label
                 >
-
                 <input
                   type="datetime-local"
                   id="booking-time"
                   name="booking-time"
                   min="2023-11-22T09:00"
                   max="2024-11-22T17:00"
+                  name="booking"
                   required
                 />
               </div>
@@ -280,6 +285,7 @@
                 <textarea
                   class="form-control"
                   id="textArea"
+                  name="textArea"
                   rows="3"
                 ></textarea>
               </div>
