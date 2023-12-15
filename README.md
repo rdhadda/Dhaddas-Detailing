@@ -9,7 +9,7 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/rdhadda/Dhaddas-Detailing)
 ![GitHub language count](https://img.shields.io/github/languages/count/rdhadda/Dhaddas-Detailing)
 ![GitHub top language](https://img.shields.io/github/languages/top/rdhadda/Dhaddas-Detailing?color=red)
-![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frdhadda.github.io%2FDhaddas-Detailing%2F&color=yellow)
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Frdhadda.github.io%2FDhaddas-Detailing%2Findex.html&color=yellow)
 
 ## CONTENTS
 
@@ -95,7 +95,7 @@ Google Fonts was used for the following fonts:
 
 - Roboto is used across the site for all text on the site. It is a sans-serif font.
 
-![Roboto Google Fonts](docs/roboto.png)
+![Roboto Google Fonts](docs/roboto-text.png)
 
 ### Imagery
 
