@@ -338,19 +338,19 @@ Overall I'm happy with the Lighthouse scores for my desktop version of Dhadda's 
 
 ### Mobile Testing
 
-#### Index.html Desktop Page
+#### Index.html Page
 
 ![Lighthouse index.html Mobile](docs/lighthouse-index-mobile.png)
 
-#### Packages.html Desktop Page
+#### Packages.html Page
 
 ![Lighthouse packages.html Mobile](docs/lighthouse-packages-mobile.png)
 
-#### Gallery.html Desktop Page
+#### Gallery.html Page
 
 ![Lighthouse gallery.html Mobile](docs/lighthouse-gallery-mobile.png)
 
-#### 404.html Desktop Page
+#### 404.html Page
 
 ![Lighthouse 404.html Mobile](docs/lighthouse-404-mobile.png)
 
