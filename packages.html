@@ -217,7 +217,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="https://formdump.codeinstitute.net" method="POST">
+            <form id="bookingForm">
               <div class="form-group">
                 <label for="name">Full Name*</label>
                 <input
@@ -288,8 +288,7 @@
                   rows="3"
                 ></textarea>
               </div>
-            </form>
-          </div>
+              </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -300,19 +299,17 @@
             </button>
             <button
               type="submit"
-              class="btn btn-primary"
-              data-dismiss="modal"
-              data-toggle="modal"
-              data-target="#thankYouModal"
-            >
+              class="btn btn-primary"         
+              >
               Book
             </button>
+          </form>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Thank For Booking Modal - Bootstrap Modal Modified -->
+    <!-- Thank You Modal - Bootstrap Modal Modified -->
     <div class="modal" tabindex="-1" role="dialog" id="thankYouModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -353,16 +350,21 @@
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
-    ></script>
+      defer
+    ></script>  
+       <!--Scripts for Booking form validation  -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

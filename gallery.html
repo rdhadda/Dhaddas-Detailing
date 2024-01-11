@@ -253,7 +253,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="https://formdump.codeinstitute.net" method="POST">
+            <form id="bookingForm">
               <div class="form-group">
                 <label for="name">Full Name*</label>
                 <input
@@ -324,8 +324,7 @@
                   rows="3"
                 ></textarea>
               </div>
-            </form>
-          </div>
+              </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -336,19 +335,17 @@
             </button>
             <button
               type="submit"
-              class="btn btn-primary"
-              data-dismiss="modal"
-              data-toggle="modal"
-              data-target="#thankYouModal"
-            >
+              class="btn btn-primary"         
+              >
               Book
             </button>
+          </form>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Thank For Booking Modal - Bootstrap Modal Modified -->
+    <!-- Thank You Modal - Bootstrap Modal Modified -->
     <div class="modal" tabindex="-1" role="dialog" id="thankYouModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -402,6 +399,8 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
       defer
-    ></script>
+    ></script>  
+       <!--Scripts for Booking form validation  -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
