@@ -41,7 +41,6 @@ Dhadda's Detailing website is designed to be a responsive website. It allows vis
 - [Testing](#Testing)
   - [W3C Validator](#W3C-Validator)
   - [Solved Bugs](#Solved-Bugs)
-  - [Known Bugs](#Known-Bugs)
   - [Testing User Stories](#Testing-User-Stories)
   - [Lighthouse Testing](#Lighthouse-Testing)
   - [Wave Testing](#Wave-Testing)
@@ -273,9 +272,7 @@ One issue I was coming across when testing my html page was an error displayed b
 
 8. The lower large image on the gallery page on the desktop view is out of alignment with the 4 images to the left of it. After I met with my mentor he helped me diagnose the issue. The container for the image had a max height set to 512px, which limited the size of the image. I've since removed this and the pictures are now aligned.
 
-### Known Bugs
-
-1. The required fields on my book now modal do not work. This is because I'm using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute doesn't take the required attribute into account. This should hopefully be resolved using Javascript.
+9. The required fields on my book now modal did not work. This was the case because I was using the data-dismiss attribute on the book button, the book button also triggers the opening of the thank you modal. The data-dismiss attribute didn't take the required attribute into account. My mentor suggesting using JavaScript to overcome this issue. With my increasing knowledge of JavaScript, I overcame this obstacle by using an event listener and function. I was able to do this by using the code institute learning material and W3 school's tutorials for modals, in particular `$("#myModal").modal('hide')`' & `$("#myModal").modal('show')`.
 
 ### Testing User Stories
 
@@ -356,7 +353,15 @@ Overall I'm happy with the Lighthouse scores for my desktop version of Dhadda's 
 
 The main factor affecting the performance across all three pages is to Eliminate render blocking resources. As these resources play a key role in the website it's difficult to eliminate them.
 
-I feel there is room for improvement in the performance of the mobile version of Dhadda's detailing. One method I tried to implement to improve this was to give my gallery images specific heights and widths through media queries. Unfortunately this didn't improve my performance score. As my knowledge grows through the course I hope to improve on this.
+I feel there is room for improvement in the performance of the mobile version of Dhadda's detailing. There were a few methods I tried to implement to improve the performance.
+
+- The first was to use the srcset attribute for images on the gallery page. This method didn't improve the performance.
+
+- The second was to use the picture attribute and different image sizes for varying break-points on the gallery page. Unfortunately this didn't seem to make much of an improvement.
+
+- The third was to give my gallery images specific heights and widths through media queries. Unfortunately this didn't improve my performance score.
+
+As my knowledge improves, I hope to implement various methods to improve the performance of the website over time.
 
 ### Wave Testing
 
@@ -441,7 +446,7 @@ Each device tested the site using the following browsers:
 
 I've used code and classes courtesy of Bootstrap, this can be seen throughout my code with comments.
 
-W3 Schools for the favicon.
+W3 Schools for the favicon and learning how to manipulate a modal using JavaScript.
 
 ### Media
 
